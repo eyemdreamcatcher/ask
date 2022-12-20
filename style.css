@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: rgb(249, 179, 49);
+    height: 55px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    border-bottom: solid 0.5px;
+    z-index: 1;
+    box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    width: 1250px;
+    height: 55px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    line-height: 55px;
+}
+
+.nav ul li {
+  float: right;
+  line-height: 55px;
+  margin-left: 2em;
+}
+
+.nav ul li:hover {
+    float: right;
+    line-height: 55px;
+    margin-left: 2em;
+    color: white;
+  }
+  
+
+.banner {
+    background-color: rgb(249, 179, 49);
+    height: 300px;
+}
+
+.banner-1 {
+    height: 300px;
+    width: 1250px;
+    margin: auto;
+    display: flex;
+}
+
+.banner-title {
+    width: 50%;
+    align-self: center;
+}
+
+.banner-title h1 {
+    font-size: 100px;
+}
+
+.banner-img {
+    width: 50%;
+    align-self: center;
+    text-align: right;
+}
+
+.banner-title .btn {
+    padding: 15px;
+    border: 0;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+
+}
+
+.btn:hover {
+    padding: 15px;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(249, 179, 49);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.banner-title input[type=text] {
+    padding: 15px;
+    border: 0;
+    border-radius: 15px;
+    width: 280px;
+    margin-left: 1em;
+}
+
+.container {
+    margin: auto;
+    width: 1250px;
+    min-height: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-nav {
+    
+    width: 10%;
+    min-height:50%;
+    display: flex;
+}
+
+form input[type=text] {
+    border: solid 0.5px;
+    width: fit-content;
+}
+
+.container-1 {
+    min-height:500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    border: solid 0.3px rgb(209, 209, 209);
+    border-radius: 4px;
+    width: 85%;
+    min-height: 5%;
+    margin-top: 1em;
+    padding: 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.content h2 {
+    line-height: 2em;
+}
+
+.content p {
+    line-height: 21px;
+}
+
+.container-2 {
+    border-left: solid 0.3px rgb(209, 209, 209);
+    margin-top: 1em;
+    height: 250px;
+    width: 30%;
+    display: flex;
+    position: sticky;
+    top: 3.8em;
+}
+
+.discover {
+    color: #737373;
+    height: 200px;
+    z-index: 2;
+    padding-left: 1em;
+}
+
+.form-question {
+    width: 100%;
+}
+
+/* form question */
+.form-question form input {
+    width: 100%;
+    border-radius: 4px;
+    border: solid 0.51px;
+    padding: 0.5rem;
+}
+
+.button-ask {
+    margin-top: 0.5rem;
+    border: none;
+  
+}
+
+.button-ask button {
+    background-color: rgb(249, 179, 49);
+    border: none;
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* animation utility */
+.animate {
+animation-duration: 1s;
+animation-fill-mode: both;
+}
+.animate.animate--infinite {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* animation */
+.animate {
+    animation-name:rotate;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+/* discover */
+.hashtag-box {
+    color: #737373;
+    background-color: #f5f5f5;
+}
+
+.box {
+    float: left;
+    border: solid 0.5px;
+    margin: 0.5em;
+    padding: 5px;
+    border-radius: 4px;
+    
+}
+
+/* side nav */
+.side-nav {
+   display: flex;
+   flex-flow: column wrap;
+   height: 500px;
+   position: sticky;
+   top: 3.5rem;
+}
+
+/* footer side */
+.footer-side {
+    font-size: 9px;
+    display:flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.footer-side .box {
+    color: #737373;
+    text-align: center;
+    border: none;
+    margin: 0;
+}
+
+
+.side-nav ol {
+    border-bottom: solid 0.3px rgb(209, 209, 209);
+}
+
+.side-nav ol li {
+    color: #737373;
+    margin: 0.5em;
+    padding: 3px 0 3px 8px;
+}
+
+.side-nav ol li:hover {
+    border-radius: 5px;
+    background-color: #ececec;
+}
